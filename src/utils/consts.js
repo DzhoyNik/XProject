@@ -1,7 +1,0 @@
-export const AUTH_ROUTE = "/"
-export const NEWS_ROUTE = "/news"
-export const NOTES_ROUTE = "/notes"
-export const COMPANY_ROUTE = "/company"
-export const PROJECTS_ROUTE = "/projects"
-export const SETTINGS_ROUTE = "/settings"
-export const LOGOUT_ROUTE = "/logout"

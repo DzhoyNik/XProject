@@ -1,0 +1,173 @@
+.title {
+    width: 100%;
+    border-bottom: var(--border-1);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btnEdit {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.btnEdit > span > svg {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.viewMode {
+    padding: 0.75rem !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.viewMode p {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.viewMode textarea {
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contentSection {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px #ddd;
+}
+
+.contentSection > textarea {
+    width: 100%;
+}
+
+.contentSectionDelete {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 45px;
+    height: 45px;
+}
+
+.contentSectionDelete > span > svg {
+    margin: 0;
+    transform: scale(1.1);
+}
+
+.contentSectionType {
+    position: absolute;
+    top: -1.5rem;
+    left: 3rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.contentSectionType > button {
+    width: 45px;
+    height: 45px;
+}
+
+.contentSectionType > button > span > svg {
+    margin: 0;
+    transform: scale(1);
+}
+
+.contentSectionInfo {
+    background: #d8fbff !important;
+    border-left: 7.5px solid #00e5ff !important;
+}
+
+.contentSectionInfo > textarea {
+    color: #111;
+    background: transparent;
+    font-weight: 600;
+}
+
+.contentSectionWarn {
+    background: #fffbd8 !important;
+    border-left: 7.5px solid #ffea2e !important;
+}
+
+.contentSectionWarn > textarea {
+    color: #111;
+    background: transparent;
+    font-weight: 600;
+}
+
+.contentSectionError {
+    background: #ffd8d8 !important;
+    border-left: 7.5px solid #ff3c3c !important;
+}
+
+.contentSectionError > textarea {
+    color: #111;
+    background: transparent;
+    font-weight: 600;
+}
+
+.tools {
+    position: fixed;
+    top: 7.5rem;
+    left: 27rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menuBtn {
+    width: 45px;
+    height: 45px;
+}
+
+.menuBtn > span > svg {
+    margin: 0;
+    transform: scale(0.9);
+}
+
+.textSection {
+    font-family: "Roboto", sans-serif;
+    text-indent: 1.25rem;
+    line-height: 1.2;
+}
+
+.imageSection {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.codeSection {
+    font-family: monospace;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    white-space: pre-wrap;
+    border-radius: var(--border-radius-1);
+}
+
+.infoSection {
+    padding: 0;
+    font-weight: bold;
+    text-indent: 1.25rem;
+}
+
+.infoSection > p {
+    font-family: "Roboto", sans-serif;
+}
+
