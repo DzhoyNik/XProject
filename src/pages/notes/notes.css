@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+.topBtn {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.topBtn > span > svg {
+    margin: 0;
+    transform: scale(1);
+}
+
+.notes-chapters-list {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+.notes-void {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notes-void-img {
+    width: 30%;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.notes-void-img img {
+    width: 100%;
+}
+
+.notes-void h1 {
+    margin-bottom: 1rem;
+    color: #909090;
+    font-weight: bold;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.notes-void p {
+    color: #C1C1C1;
+    font-weight: 300;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.notes-chapters {
+    width: 100%;
+}
+
+.notes-chapters h2 {
+    width: 67%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.75rem;
+    font-family: "Roboto Mono", sans-serif;
+    margin-bottom: 2rem;
+    padding: 1rem 0rem;
+    border-bottom: var(--border-1);
+}
+
+#notes-chapters-h2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#notes-chapters-h2 > svg {
+    margin-left: 0.5rem;
+}
+
+.notes-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.notes-chapter-section {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+    background: #fff;
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 5px 10px #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.notes-chapter-section:hover {
+    background: var(--background-4);
+    box-shadow: var(--box-shadow-1);
+    transform: scale(1.03);
+}
+
+.notes-chapter-section p {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.notes-chapter-section-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.notes-chapter-section button {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+.notes-chapter-section button svg {
+    margin: 0;
+}
+
+.notes-chapter-section button:hover {
+    background-color: unset;
+}
+
+.notes-chapter-section button#link:hover svg {
+    color: #4c6aed;
+}
+
+.notes-chapter-section button#delete:hover svg {
+    color: #ed4c4c;
+}
+
+.notes-subchapters-list {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.notes-subchapters-list .notes-subchapter {
+    padding-right: 0.5rem;
+    border-right: var(--border-1);
+}
+
+.notes-subchapter .notes-subchapter-section {
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.notes-subchapter .notes-subchapter-section:hover {
+    transform: scale(1.02);
+    background-color: var(--background-4);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow-1);
+}
+
+.notes-subchapter .notes-subchapter-section.active {
+    background-color: var(--background-4);
+    box-shadow: var(--box-shadow-1);
+}
+
+.notes-subchapters-list .notes-content {
+    display: grid;
+}
+
+.notes-content .notes-content-section {
+    padding: 1rem;
+    position: relative;
+}
+
+.notes-content-section .notes-content-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.notes-content-delete button {
+    background-color: var(--background-4);
+    border: var(--border-1);
+    border-style: dashed;
+    border-radius: var(--border-radius-2);
+    transition: all 0.3s ease;
+}
+
+.notes-content-delete button:hover {
+    background-color: var(--background-5);
+}
+
+.notes-content-delete button>svg {
+    transform: scale(1);
+    margin: 0;
+}
+
+.notes-content-section p {
+    padding: 1rem;
+    text-indent: 1.5rem;
+    border: var(--border-1);
+    border-style: dashed;
+    border-radius: var(--border-radius-2);
+}
+
+.notes-content-section textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-indent: 1.5rem;
+    font-family: "LibertinusSans", sans-serif;
+    border: var(--border-1);
+    border-style: dashed;
+    border-radius: var(--border-radius-2);
+}

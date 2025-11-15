@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.modal-body {
+    padding: 3rem;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    background-color: var(--background-4);
+    border-radius: var(--border-radius-1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.modal-close button {
+    background: none;
+}
+
+.modal-section {
+    max-height: 40vh;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.modal-button {
+    color: var(--color-5);
+    background: none;
+    border: 2px solid var(--color-5);
+}
+
+/* Modal Notes - Link */
+
+.modal-link {
+    width: 35vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.modal-link .modal-link-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-link .modal-link-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1rem;
+    border-left: var(--border-1);
+}
+
+.modal-link .modal-link-action input {
+    margin: 1rem 0;
+    text-align: center;
+}
