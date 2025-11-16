@@ -10,9 +10,10 @@ import { MdErrorOutline, MdOutlineEdit } from "react-icons/md";
 import TextArea from "../../components/TextArea";
 import ImageUploader from "../../components/ImageUploader";
 import { v4 as uuidv4 } from "uuid";
-
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import ButtonBack from "../../components/ButtonBack";
+import { NOTES_ROUTE } from "../../utils/consts";
 
 const Note = () => {
     const { chapterId, noteId } = useParams();
@@ -89,6 +90,7 @@ const Note = () => {
     return (
         <DndProvider backend={HTML5Backend}>
             <BaseStructure>
+                <ButtonBack route={`${NOTES_ROUTE}/${chapterId}`} />
                 <h1 className={style.title}>{note.title}</h1>
                 {isEdit ? (
                     <FillButton onClick={handleSaveContent} btn={style.btnEdit}>

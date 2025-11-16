@@ -10,8 +10,12 @@ import FillButton from "../../components/FillButton";
 import { IoMdArrowDropdown } from "react-icons/io";
 import TextArea from "../../components/TextArea";
 import NotesChapter from "./NotesChapter";
+import ButtonBack from "../../components/ButtonBack";
+import { NOTES_ROUTE } from "../../utils/consts";
+import useScrollRestore from "../../hooks/useScrollRestore";
 
 const Chapter = observer(() => {
+    useScrollRestore("chapters")
     const { chapterId } = useParams()
     const [ chapter, setChapter ] = useState([])
     const [ subchapter, setSubchapter ] = useState([])
@@ -48,6 +52,7 @@ const Chapter = observer(() => {
 
     return(
         <BaseStructure>
+            <ButtonBack route={NOTES_ROUTE} />
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
                 <div className="modal-section" style={{ width: "27vw" }}>
                     <p>Заголовок заметки*</p>

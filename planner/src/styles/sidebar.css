@@ -2,9 +2,11 @@
 
 .sidebar {
     width: 20%;
+    min-width: 0;
     height: 100vh;
     position: fixed;
     background-color: var(--background-2);
+    z-index: 2;
 }
 
 .sidebar-logo {
@@ -21,7 +23,7 @@
 }
 
 .sidebar-section {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-section svg {
@@ -50,4 +52,66 @@
 
 .sidebar-section a.active svg {
     color: var(--color-4);
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: 80%;
+        height: 7.5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1rem;
+        border-radius: 100px;
+        border: 0.5px solid #00000085;
+        background: #00000038 !important;
+        backdrop-filter: blur(5px) saturate(120%);
+    }
+
+    .sidebar-logo {
+        display: none;
+    }
+
+    .sidebar-nav {
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-section {
+        background: none;
+    }
+
+    .sidebar-section > a {
+        background: none;
+    }
+
+    .sidebar-section > a > div > svg {
+        margin: 0;
+    }
+
+    .sidebar-section > a > div > span {
+        display: none;
+    }
+
+    .sidebar-section a:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        background-color: rgba(27, 70, 29, 0.2);
+    }
+
+    .sidebar-section a.active {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        border: 0.5px solid #ffffff92;
+        background-color: #ffffff61;
+    }
 }

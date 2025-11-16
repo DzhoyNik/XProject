@@ -29,7 +29,7 @@ const Sidebar = () => {
                         {({ isActive }) => (
                             <div>
                                 {isActive ? <IoNewspaper /> : <IoNewspaperOutline />}
-                                Новости
+                                <span>Новости</span>
                             </div>
                         )}
                     </NavLink>
@@ -39,7 +39,7 @@ const Sidebar = () => {
                         {({ isActive }) => (
                             <div>
                                 {isActive ? <IoFolderOpen /> : <IoFolderOpenOutline />}
-                                Заметки
+                                <span>Заметки</span>
                             </div>
                         )}
                     </NavLink>
@@ -49,7 +49,7 @@ const Sidebar = () => {
                         {({ isActive }) => (
                             <div>
                                 {isActive ? <IoBusiness /> : <IoBusinessOutline />}
-                                Компания
+                                <span>Компания</span>
                             </div>
                         )}
                     </NavLink>
@@ -59,7 +59,7 @@ const Sidebar = () => {
                         {({ isActive }) => (
                             <div>
                                 {isActive ? <IoGrid /> : <IoGridOutline />}
-                                Проекты
+                                <span>Проекты</span>
                             </div>
                         )}
                     </NavLink>
@@ -69,13 +69,18 @@ const Sidebar = () => {
                         {({ isActive }) => (
                             <div>
                                 {isActive ? <IoSettings /> : <IoSettingsOutline />}
-                                Настройки
+                                <span>Настройки</span>
                             </div>
                         )}
                     </NavLink>
                 </div>
                 <div className="sidebar-section">
-                    <NavLink to={LOGOUT_ROUTE}><IoLogOutOutline />Выйти</NavLink>
+                    <NavLink to={LOGOUT_ROUTE}>
+                        <div>
+                            <IoLogOutOutline />
+                            <span>Выйти</span>
+                        </div>
+                    </NavLink>
                 </div>
             </div>
         </div>

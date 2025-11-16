@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./components/AppRouter.js";
 import "./styles/style.css"
 import "./styles/fonts.css"
+import "./styles/responsive.css"
 import { ToastContainer } from "react-toastify";
 import { observer } from "mobx-react-lite";
 import { useContext, useEffect, useState } from "react";

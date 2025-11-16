@@ -1,0 +1,38 @@
+.btnBack {
+    position: fixed;
+    top: 3rem;
+    left: 24.5%;
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+
+.btnBack > button {
+    width: 55px;
+    height: 55px;
+}
+
+.btnBack > button > span > svg {
+    transform: scale(1.75);
+    margin: 0;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+    .btnBack {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .btnBack {
+        left: 3%;
+    }
+
+    .btnBack > button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .btnBack > button > span > svg {
+        transform: scale(1.4);
+    }
+}
